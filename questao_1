@@ -1,0 +1,52 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'getIdealNums' function below.
+     *
+     * The function is expected to return a LONG_INTEGER.
+     * The function accepts following parameters:
+     *  1. LONG_INTEGER l
+     *  2. LONG_INTEGER r
+     */
+
+    public static long getIdealNums(long l, long r) {
+    
+    int count=1;
+    int count2=0;
+    long aux=0;
+    for (long i=1; i<=r; i++) {
+        if (i%5 ==0 &&  i%3 ==0 ){
+            count ++; 
+
+        }
+    }
+    //for (int j = 0; j<= count; j++){
+    //    for (int s=0; s<= count; s++){
+     //       aux = (long) (Math.pow(3,j)*Math.pow(5,s));
+     //       if (aux>= 1 && aux <= r){
+     //           return aux; 
+      //      }
+     //       if (aux !=0|| s== count){
+     //           break;
+     //       }
+     //   }
+    //}
+    return count;
+        }
+    }
+
+public class Solution {
